@@ -1,0 +1,263 @@
+:root{
+  --cream:#f6f2ea;
+  --paper:#fffdf8;
+  --wine:#6b1f3b;
+  --plum:#7a2e4f;
+  --olive:#6f7f4c;
+  --ink:#2f2426;
+  --line:#e6e1d8;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:"Lato", sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  overflow-x:hidden;
+}
+
+.container{
+  max-width:1050px;
+  margin:0 auto;
+  padding:28px 18px 60px;
+}
+
+/* NAV + HERO */
+.hero{
+  position:relative;
+  padding:26px 18px 70px;
+  background: radial-gradient(1200px 500px at 50% 0%, rgba(107,31,59,0.12), transparent 70%);
+}
+
+.nav{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  margin:0 auto 35px;
+}
+
+.nav a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:0.95rem;
+  padding:8px 10px;
+  border-radius:999px;
+}
+
+.nav a:hover{
+  background:rgba(107,31,59,0.08);
+}
+
+.nav-btn{
+  border:1px solid var(--line);
+  background:var(--paper);
+}
+
+.hero-inner{
+  text-align:center;
+  max-width:880px;
+  margin:0 auto;
+  padding:55px 18px;
+  border-radius:26px;
+  background:rgba(255,255,255,0.55);
+  border:1px solid rgba(230,225,216,0.85);
+  backdrop-filter: blur(6px);
+}
+
+.kicker{
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  font-size:0.78rem;
+  color:rgba(47,36,38,0.75);
+  margin:0 0 12px;
+}
+
+.hero h1{
+  font-family:"Playfair Display", serif;
+  font-size:3rem;
+  margin:0 0 12px;
+  color:var(--wine);
+}
+
+.amp{ color:var(--olive); }
+
+.date{
+  margin:0;
+  font-size:1.05rem;
+  color:rgba(47,36,38,0.85);
+}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin-top:24px;
+  flex-wrap:wrap;
+}
+
+/* PANELS */
+.panel{
+  background:rgba(255,255,255,0.60);
+  border:1px solid rgba(230,225,216,0.85);
+  border-radius:26px;
+  padding:34px 22px;
+  margin:18px 0;
+}
+
+.panel h2{
+  font-family:"Playfair Display", serif;
+  color:var(--wine);
+  margin:0 0 6px;
+  font-size:2rem;
+}
+
+.sub{
+  margin:0 0 18px;
+  color:rgba(47,36,38,0.78);
+}
+
+/* Moodboard tiles like your inspo */
+.moodboard{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:14px;
+  margin-top:16px;
+}
+
+.tile{
+  border-radius:18px;
+  overflow:hidden;
+  background:var(--paper);
+  border:1px solid rgba(230,225,216,0.9);
+  box-shadow: 0 10px 30px rgba(47,36,38,0.06);
+  aspect-ratio: 1 / 1;
+}
+
+.tile-wide{
+  grid-column:1 / -1;
+  aspect-ratio: 2.2 / 1;
+}
+
+.tile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* Palette swatches */
+.palette{
+  display:flex;
+  gap:10px;
+  margin-top:16px;
+  justify-content:center;
+}
+
+.swatch{
+  width:20px; height:20px;
+  border-radius:50%;
+  background:var(--c);
+  border:1px solid rgba(47,36,38,0.18);
+}
+
+/* Layout helpers */
+.two-col{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:14px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:14px;
+}
+
+.card, .info{
+  background:var(--paper);
+  border:1px solid rgba(230,225,216,0.9);
+  border-radius:18px;
+  padding:18px;
+}
+
+.card h3, .info h3{
+  margin:0 0 8px;
+  font-family:"Playfair Display", serif;
+  color:var(--plum);
+}
+
+ul{ margin:8px 0 0 18px; }
+li{ margin:6px 0; }
+
+.btn-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+/* Buttons */
+.button{
+  display:inline-block;
+  padding:12px 22px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  border:1px solid transparent;
+}
+
+.button-olive{
+  background:var(--olive);
+  color:white;
+}
+
+.button-wine{
+  background:var(--wine);
+  color:white;
+}
+
+.button-outline{
+  background:transparent;
+  color:var(--wine);
+  border:1px solid rgba(107,31,59,0.35);
+}
+
+.button:hover{ transform: translateY(-1px); }
+
+.tiny{ font-size:0.85rem; margin-top:14px; }
+.muted{ color:rgba(47,36,38,0.7); }
+
+.footer{
+  text-align:center;
+  padding:28px 0 10px;
+  color:rgba(47,36,38,0.75);
+}
+
+/* Floral ornaments (simple, free, and pretty using CSS only) */
+.floral{
+  position:fixed;
+  width:420px;
+  height:420px;
+  opacity:0.17;
+  pointer-events:none;
+  filter: blur(0.2px);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(111,127,76,0.55) 0 18%, transparent 19%),
+    radial-gradient(circle at 65% 45%, rgba(107,31,59,0.55) 0 16%, transparent 17%),
+    radial-gradient(circle at 45% 70%, rgba(122,46,79,0.55) 0 16%, transparent 17%),
+    radial-gradient(circle at 70% 75%, rgba(111,127,76,0.45) 0 14%, transparent 15%),
+    radial-gradient(circle at 25% 80%, rgba(107,31,59,0.40) 0 14%, transparent 15%);
+  border-radius:50%;
+}
+
+.floral-left{ left:-220px; top:80px; }
+.floral-right{ right:-220px; bottom:60px; }
+
+@media (max-width: 720px){
+  .two-col, .grid{ grid-template-columns: 1fr; }
+  .hero h1{ font-size:2.35rem; }
+  .tile-wide{ aspect-ratio: 1.6 / 1; }
+}

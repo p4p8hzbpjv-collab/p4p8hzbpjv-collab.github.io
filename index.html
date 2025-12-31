@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Names | June 13, 2026</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Floral background ornaments (pure CSS) -->
+  <div class="floral floral-left" aria-hidden="true"></div>
+  <div class="floral floral-right" aria-hidden="true"></div>
+
+  <header class="hero">
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#details">Details</a>
+      <a href="#travel">Travel</a>
+      <a href="#registry">Registry</a>
+      <a class="nav-btn" href="#rsvp">RSVP</a>
+    </nav>
+
+    <div id="home" class="hero-inner">
+      <p class="kicker">The Wedding of</p>
+      <h1>Your Name <span class="amp">&</span> Partner Name</h1>
+      <p class="date">June 13, 2026 • Shreveport, Louisiana</p>
+
+      <div class="hero-actions">
+        <a class="button button-olive" href="#rsvp">RSVP</a>
+        <a class="button button-outline" href="#details">See Details</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Moodboard / Inspo style section -->
+    <section class="panel">
+      <h2>Wedding Inspo</h2>
+      <p class="sub">Romantic florals, rich wine tones, olive greens, and soft neutrals.</p>
+
+      <div class="moodboard">
+        <div class="tile">
+          <img src="images/inspo1.jpg" alt="Wedding table inspiration">
+        </div>
+        <div class="tile">
+          <img src="images/inspo2.jpg" alt="Color palette inspiration">
+        </div>
+        <div class="tile">
+          <img src="images/inspo3.jpg" alt="Fabric swatch inspiration">
+        </div>
+        <div class="tile">
+          <img src="images/inspo4.jpg" alt="Bouquet inspiration">
+        </div>
+        <div class="tile tile-wide">
+          <img src="images/inspo5.jpg" alt="Florals inspiration">
+        </div>
+      </div>
+
+      <div class="palette">
+        <span class="swatch" style="--c:#6b1f3b"></span>
+        <span class="swatch" style="--c:#7a2e4f"></span>
+        <span class="swatch" style="--c:#6f7f4c"></span>
+        <span class="swatch" style="--c:#f6f2ea"></span>
+        <span class="swatch" style="--c:#e6e1d8"></span>
+      </div>
+    </section>
+
+    <section id="story" class="panel">
+      <h2>Our Story</h2>
+      <p class="sub">A quick note about how you met, your favorite memories, and the proposal.</p>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>How we met</h3>
+          <p>Write your story here. Keep it sweet, simple, and personal.</p>
+        </div>
+        <div class="card">
+          <h3>The proposal</h3>
+          <p>Write your proposal story here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="panel">
+      <h2>The Details</h2>
+      <p class="sub">Everything you need for the day-of.</p>
+
+      <div class="grid">
+        <div class="info">
+          <h3>Ceremony</h3>
+          <p><strong>Time:</strong> 4:30 PM</p>
+          <p><strong>Location:</strong> Venue Name</p>
+          <p><strong>Address:</strong> Street, City, State</p>
+        </div>
+
+        <div class="info">
+          <h3>Reception</h3>
+          <p><strong>Time:</strong> 6:00 PM</p>
+          <p><strong>Location:</strong> Venue Name</p>
+          <p><strong>Address:</strong> Street, City, State</p>
+        </div>
+
+        <div class="info">
+          <h3>Dress Code</h3>
+          <p>Romantic cocktail / semi-formal.</p>
+          <p>Think: deep jewel tones, neutrals, and comfortable shoes.</p>
+        </div>
+
+        <div class="info">
+          <h3>Timeline</h3>
+          <p>4:00 Guests arrive</p>
+          <p>4:30 Ceremony</p>
+          <p>6:00 Reception</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="travel" class="panel">
+      <h2>Travel</h2>
+      <p class="sub">Hotel blocks and tips for getting into town.</p>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>Hotels</h3>
+          <ul>
+            <li>Hotel Name — (Block info)</li>
+            <li>Hotel Name — (Block info)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Airports</h3>
+          <ul>
+            <li>Closest airport: …</li>
+            <li>Alternate: …</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="registry" class="panel">
+      <h2>Registry</h2>
+      <p class="sub">We’re so grateful for your love and support.</p>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>Registry Links</h3>
+          <p>Add your registry buttons here:</p>
+          <div class="btn-row">
+            <a class="button button-olive" href="#" target="_blank" rel="noreferrer">Amazon</a>
+            <a class="button button-wine" href="#" target="_blank" rel="noreferrer">Target</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Note</h3>
+          <p>Your presence is the best gift. If you’d like, a registry is available above.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="panel">
+      <h2>RSVP</h2>
+      <p class="sub">Please RSVP by <strong>(date)</strong>.</p>
+
+      <div class="card">
+        <p>Click below to RSVP. (We’ll connect a Google Form.)</p>
+        <a class="button button-olive" href="#" target="_blank" rel="noreferrer">RSVP Now</a>
+
+        <p class="tiny">If the button doesn’t work, you can also RSVP at: <span class="muted">your link here</span></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>With love, <strong>Your Name & Partner Name</strong></p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
